@@ -18,17 +18,17 @@ Game();
 
 function Game(){
 
-    document.write("Legend of the Cactus Dragon!");
+    document.write("Project Plateau!");
     var playerName = prompt("What is your name?");
-    alert("Wecome to the land of Drizdal "+ playerName);
+    alert("Welcome to P.P. "+ playerName);
     
     prison();
     
-    function Prison(){
-        var Prison = prompt("You wake up...Your head is pounding and your vision blurred. After pacing around walking off the headache your vision clears. It appears you are in prison and you cannot remember why. /n -look around /n -go back to sleep /n -taunt the guard"). toLowercase();
+    function Plateau(){
+        var Plateau = prompt("You are on the top of a plateau standing near the edge. The world around you is a vast orange desert under a bright blue sky. In the distance you spot a couple oases with blue water and lush green trees. In fron of you is a pedestal with a notebook and pen and some writing on it. /n -look around /n -pick up notebook /n -pick up pen /n -read the pedestal /n -move NSEW"). toLowercase();
         
-        if(prison == "look around" || prison == "Look"){
-            var  prisonlook  = prompt("The prison is small, dirty, and damp. A rat scurries into a hole in the corner. Bugs squirm and scamper underfoot. There is a barred window to the back. An occupied bed has a stranger asleep snoring to the right. The cell bars and locked door to the front. An epty bed which you had slept in the night before to the right. In the center of the dirt floor is a lumpy moldy rug. /n -wake stranger /n -move rug /n -eat bugs");
+        if(plateau == "read the pedestal" || plateau == "Read"){
+            var  pedestalRead = prompt("The pedestal reads: WWN-Read Carefully. /n - /n -move rug /n -eat bugs");
         }
         
         else if(prison == "go back to sleep" || prison == "sleep"){
