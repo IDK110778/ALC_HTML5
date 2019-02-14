@@ -46,22 +46,24 @@ function Game(){
              if(notebook){x
                 var notebookaction = ("n/ -write text down")
             }
-            var pedestalRead = prompt("The pedestal reads: WWN-Read Carefully. /n -look around" +notebookaction+ "/n -move NSEW");
+            var pedestalRead = prompt("The pedestal reads: WWN-Read Carefully. /n -look around" +notebookaction+ "/n -move NSEW").toLowerCase();
             }
         else if(PlateauE4 == "look around" || PlateauE4 == "look"){
-            var LookAround = prompt("The world around you is a vast orange desert under a bright blue sky with fluffy white clouds. In the distance you spot a couple oases with blue water and lush green trees. In front of you is a pedestal with a notebook and pen and some writing on it. The rest of the plateau is basically empty except for a small silver breifcase in the center and a wooden shack on the far side. /n -look around /n -read the pedestal /n -move NSEW");
+            var LookAround = prompt("The world around you is a vast orange desert under a bright blue sky with fluffy white clouds. In the distance you spot a couple oases with blue water and lush green trees. In front of you is a pedestal with a notebook and pen and some writing on it. The rest of the plateau is basically empty except for a small silver breifcase in the center and a wooden shack on the far side. /n -look around /n -read the pedestal /n -move NSEW").toLowerCase();
             }
         else if(PlateauE4 == "pick up notebook and pen" || PlateauE4 == "pick up notebook"){
-            var NotebookCollect = prompt("Gotten! /n -look around n/ -read the pedestal n/ -move NSEW");
+            var NotebookCollect = prompt("Gotten! /n -look around n/ -read the pedestal n/ -move NSEW").toLowerCase();
             var notebook = true
             }
-        else if(PlateauE4 == "move west")
-            PlateauD4();
+        else if(PlateauE4 == "move west");
+            
+        PlateauD4()
         
         
-    PlateauD4();
         
-    var PlateauD4 = prompt("Nothing interesting to see here. n/ -look around n/ -move NSEW")
+PlateauD4();
+    
+    var PlateauD4 = prompt("Nothing interesting to see here. n/ -look around n/ -move NSEW").toLowerCase();
             
                   
             
