@@ -41,8 +41,26 @@ function Game(){
         var PlateauE4 = prompt("You are on the top of a plateau standing near the edge. The world around you is a vast orange desert under a bright blue sky with fluffy white clouds. In the distance you spot a couple oases with blue water and lush green trees. In front of you is a pedestal with a notebook and pen and some writing on it. \n -look around \n -pick up notebook and pen \n -read the pedestal \n -move NSEW").toLowerCase();
         
         if(PlateauE4 == "read the pedestal" || PlateauE4 == "read"){
-            var pedestalRead = prompt("The pedestal reads: WWN-Read Carefully. \n -look around \n -pick up notebook and pen \n -move NSEW");
+            var pedestalRead = prompt("The pedestal reads: WWN-Read Carefully. \n -look around \n -pick up notebook and pen \n -move NSEW").toLowerCase;
+        
+            if(pedestalRead == "move west"){
+                var PlateauD4 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
             }
+            else if(pedestalRead == "move north"){
+                var PlateauE3 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
+            }
+            else if(pedestalRead == "move south"){
+                var PlateauE5 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
+            }
+            else if(pedestalRead == "move east"){
+                var PlateauE4Death = prompt("You fall off the plateau and die!!! \n -give up \n -restart").toLowerCase();
+
+                    if (PlateauD4Death == "give up"){
+                        var done = alert("Bye")
+                        }
+                    else if (PlateauD4Death == "restart"){
+                        Plateau();
+                        }
             
            
         else if(PlateauE4 == "look around" || PlateauE4 == "look"){
@@ -58,13 +76,31 @@ function Game(){
         
         
         
-        else if(PlateauE4 == "move west");
+        else if(PlateauE4 == "move west"){
             var PlateauD4 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
-        
-        
-        
-            
-            }   
+        }
+        else if(PlateauE4 == "move north"){
+            var PlateauE3 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
+        }
+        else if(PlateauE4 == "move south"){
+            var PlateauE5 = prompt("Nothing interesting to see here. \n -look around \n -move NSEW");
+        }
+        else if(PlateauE4 == "move east"){
+            var PlateauE4Death = prompt("You fall off the plateau and die!!! \n -give up \n -restart").toLowerCase();
+                
+                if (PlateauD4Death == "give up"){
+                    var done = alert("Bye")
+                    }
+                else if (PlateauD4Death == "restart"){
+                    Plateau();
+                }
+            }  
     
     
-}    
+    
+    }   
+    
+        
+    }
+    }
+}
