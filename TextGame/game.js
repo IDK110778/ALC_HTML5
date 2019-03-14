@@ -31,6 +31,10 @@ function Game(){
 
     document.write("Project Plateau!");
     var playerName = prompt("What is your name?");
+    while(!confirm("Are you sure you want this name?"))
+    {   
+        playerName = prompt("What name do you want?");
+    }
     alert("Welcome to P.P. "+ playerName);
     
     Plateau();
