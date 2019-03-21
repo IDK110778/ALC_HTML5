@@ -4,31 +4,67 @@
         <title>exerCiSeS Vol. 1</title>
         <style type="text/css">
             body{
-                background-color:aqua
+                background-color:aqua;
             }
             h1{
                 color:chartreuse;
-                font-family:sans-serif
+                font-family:sans-serif;
+                position:absolute;
+                z-index: 2;
             }
             h3{
                 color:chocolate;
                 font-family:serif;
                 font-size:2em;
-                font-weight:bolder;
+                font-weight:900;
                 font-stretch: extra-condensed;
+                position:absolute;
+                top:50px;
+                z-index: 3;
             }
             div#box{
-                color:burlywood;
-                width: 100px;
-                height: 100px;
+                background-color:burlywood;
+                width: 500px;
+                height: 400px;
                 position: absolute;
-            
+                top: -50px;
+                left: -10px;
+                z-index: 0;
+            }
+            div#circle{
+                background-color:coral;
+                width:150px;
+                height:150px;
+                border-radius:200%;
+                position:absolute;
+                left: 300px;
+                top: 300px;
+            }
+            div#triangle{
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 50px solid fuchsia;
+                position:absolute;
+                left:250px;
+                top:350;
+            }
+            img#skull{
+                display:block;
+                width:150px;
+                height:100px;
+                position:absolute;
+                top:150px;
+                left:55px;
+                z-index: 4
             }
         </style>
     </head>
     <body>
         <h1>Why was the boy sad?</h1>
         <h3>He had a frog stapled to his face.</h3>
+        <img src="Skull_Head.png" id="skull">
         <div id="box"></div>
+        <div id="circle"></div>
+        <div id="triangle"></div>
     </body>
 </html>
