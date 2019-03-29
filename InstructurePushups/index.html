@@ -2,7 +2,7 @@
 <html>
     <body>
         <canvas id="myCanvas" width="1000" height="1000"
-        style="border:1px solid #000000;background-color:aqua">
+        style="border:1px solid #000000;background-color:darkgray">
         </canvas>
         <script>
         var canvas =
@@ -11,20 +11,24 @@
             
             //Line
             ctx.fillStyle = "#FF0000";
-            ctx.fillRect = (0,0,200,50);
             ctx.moveTo(0,0);
             ctx.lineTo(1000,1000);
+            ctx.stroke();
+            
+            ctx.fillStyle = "#FF0000";
+            ctx.moveTo(1000,0);
+            ctx.lineTo(0,1000);
             ctx.stroke();
             //Circle
             ctx.beginPath();
             ctx.arc(500, 500, 500, 0, 2 * Math.PI);
             ctx.stroke();
-            //Gradiant
-            var grd = ctx.createLinearGradiant(200, 0, 0, 0);
-            grd.addColorStop(0, "black");
-            grd.addColorStop(1, "white");
-            ctx.fillStyle = grd;
-            ctx.fillRect(0, 0, 500, 500);
+            //Gradient
+        var grd = ctx.createLinearGradient(0, 15, 15, 0);
+		grd.addColorStop(0, 'white');
+		grd.addColorStop(1, 'darkgray');
+		ctx.fillStyle = grd;
+		ctx.fillRect(0,0,500,500);
         </script>
     </body>
 </html>
