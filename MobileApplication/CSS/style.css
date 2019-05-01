@@ -13,21 +13,24 @@ body{
 
 header{
     width:100%;
-    padding:0px;
+    padding:10px;
     background-color:chartreuse;
 }
 div#container img{
     width: 150px;
+    float:
 }
 
 header h1{
     color:darkgreen;
     font-family: 'Trochut', cursive;
     font-size: 3em;
+    float: left
 }
 
 div#content img{
-    width: 600px;
+    width: 800px;
+    
 }
 
 div#content{
@@ -76,16 +79,17 @@ nav ul li a:hover{
     float:left;
     width:20%;
     text-align:center;
-    padding:12px 0;
+    padding:50px 0;
     transition:all 0.3s ease;
     color: antiquewhite;
-    font-size:36px;
+    font-size:50px;
 }
 .icon-bar a:hover {
     background-color:antiquewhite;
+    color: darkgreen;
 }
 .active {
-    background-color:chartreuse;
+    background-color:darkgreen;
 }
 /*
 footer{
