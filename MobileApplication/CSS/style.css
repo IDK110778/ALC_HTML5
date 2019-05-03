@@ -18,18 +18,20 @@ header{
 }
 div#container img{
     width: 150px;
-    float:
+    border: 0px;
+    padding: 10px;
+    
 }
 
 header h1{
-    color:darkgreen;
+    color:yellow;
     font-family: 'Trochut', cursive;
     font-size: 3em;
-    float: left
 }
 
 div#content img{
     width: 800px;
+    padding: 0px;
     
 }
 
