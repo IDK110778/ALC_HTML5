@@ -26,14 +26,18 @@ div#container img{
 header h1{
     color:yellow;
     font-family: 'Trochut', cursive;
-    font-size: 3em;
+    font-size: 3em;  
 }
+header h1:hover{
+    color:darkgreen;
+}
+
+
 
 div#content img{
     width: 800px;
     padding: 0px;
-    
-}
+    }
 
 div#content{
     width:100%;
