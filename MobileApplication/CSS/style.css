@@ -13,11 +13,11 @@ body{
 
 header{
     width:100%;
-    padding:10px;
+    padding:20px;
     background-color:chartreuse;
 }
 div#container img{
-    width: 150px;
+    width: 80px;
     border: 0px;
     padding: 10px;
     
@@ -26,7 +26,9 @@ div#container img{
 header h1{
     color:yellow;
     font-family: 'Trochut', cursive;
-    font-size: 3em;  
+    font-size: 3em;
+    
+
 }
 header h1:hover{
     color:darkgreen;
@@ -75,7 +77,7 @@ nav ul li a:hover{
 }
 */
 .icon-bar {
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
     background-color:darkgreen;
