@@ -37,7 +37,7 @@ header h1:hover{
 
 
 div#content img{
-    width: 800px;
+    width: 200px;
     padding: 0px;
     }
 
@@ -47,7 +47,22 @@ div#content{
     color:antiquewhite;
     font-family: 'Trochut', cursive;
 }
+div#product_grp{
+    width:auto;
+    margin:auto;
+}
 
+figure.product{
+    float:left;
+    width:20%;
+    background-color: darkgreen;   
+}
+figure.product img{
+    display:block;
+    padding:10px 0;
+    width:100px;
+    margin:auto;
+}
 /*
 nav{
     background-color:saddlebrown;
