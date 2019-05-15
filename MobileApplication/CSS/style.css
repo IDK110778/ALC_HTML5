@@ -37,9 +37,12 @@ header h1:hover{
 
 
 div#content img{
-    width: 200px;
+    width:100px;
     padding: 0px;
     }
+div#content h3{
+    float:
+}
 
 div#content{
     width:100%;
@@ -56,6 +59,10 @@ figure.product{
     float:left;
     width:20%;
     background-color: darkgreen;   
+}
+figure.product:hover{
+    background-color:antiquewhite;
+    color:darkgreen;
 }
 figure.product img{
     display:block;
